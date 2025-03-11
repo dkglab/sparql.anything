@@ -20,6 +20,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+    
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
@@ -30,3 +33,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install -DskipTests -Dgenerate-cli-jar-geosparql=true
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "sparql-anything-cli/target/sparql-anything-1.0.0-SNAPSHOT-geosparql.jar"
+        bodyFile: "body.md"
