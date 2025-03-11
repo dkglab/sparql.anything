@@ -37,4 +37,4 @@ jobs:
       with:
         artifacts: "sparql-anything-cli/target/sparql-anything-1.0.0-SNAPSHOT-geosparql.jar"
         commit: main
-        tag: SNAPSHOT
+        tag: v1.0-DEV
