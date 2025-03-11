@@ -29,4 +29,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install --projects sparql-anything-cli install -DskipTests -Dgenerate-cli-jar-geosparql=true
+      run: mvn clean install -DskipTests -Dgenerate-cli-jar-geosparql=true
