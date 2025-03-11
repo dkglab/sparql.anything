@@ -1,0 +1,12 @@
+{
+    "name": "Java 17",
+    "image": "mcr.microsoft.com/devcontainers/java:17",
+    "postCreateCommand": "make setup",
+    "features": {
+     "ghcr.io/devcontainers/features/java:1": {
+        "version": "none",
+        "installGradle": "false",
+        "installMaven": "true"
+    }
+  }
+}
