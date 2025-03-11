@@ -38,3 +38,4 @@ jobs:
         artifacts: "sparql-anything-cli/target/sparql-anything-1.0.0-SNAPSHOT-geosparql.jar"
         tag: v1.0.0-SNAPSHOT
         allowUpdates: true
+        replacesArtifacts: true
